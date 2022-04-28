@@ -1,6 +1,11 @@
+const input = document.querySelector("#country-input");
+
 const addItem = (e) => {
   e.preventDefault();
-  console.log("add an item");
+  if (input.value.length > 0) {
+    let country = input.value;
+    console.log(country);
+  }
 };
 
 document.querySelector("#submit").addEventListener("click", addItem);
