@@ -1,6 +1,7 @@
 const input = document.querySelector("#country-input");
 const list = document.querySelector("#list");
 
+// Add user input (country) to list
 const addItem = (e) => {
   e.preventDefault();
   if (input.value.length > 0) {
@@ -8,7 +9,13 @@ const addItem = (e) => {
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(country));
     list.appendChild(li);
+    updateCount();
   }
+};
+
+// Update the country count (0/195)
+const updateCount = () => {
+  console.log("update the count");
 };
 
 document.querySelector("#submit").addEventListener("click", addItem);
