@@ -2,3 +2,12 @@ body {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
+
+ol {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+li {
+  padding: 3px;
+}
