@@ -1,6 +1,6 @@
 const input = document.querySelector("#country-input");
 const list = document.querySelector("#list");
-let count = document.querySelector("#count");
+const count = document.querySelector("#count");
 
 // Add user input (country) to list
 const addItem = (e) => {
