@@ -5,8 +5,9 @@ const addItem = (e) => {
   e.preventDefault();
   if (input.value.length > 0) {
     let country = input.value;
-    let li = document.getElementById("li");
+    let li = document.createElement("li");
     li.appendChild(document.createTextNode(country));
+    list.appendChild(li);
   }
 };
 
