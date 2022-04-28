@@ -1,10 +1,12 @@
 const input = document.querySelector("#country-input");
+const list = document.querySelector("#list");
 
 const addItem = (e) => {
   e.preventDefault();
   if (input.value.length > 0) {
     let country = input.value;
-    console.log(country);
+    let li = document.getElementById("li");
+    li.appendChild(document.createTextNode(country));
   }
 };
 
