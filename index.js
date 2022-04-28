@@ -1,5 +1,6 @@
 const input = document.querySelector("#country-input");
 const list = document.querySelector("#list");
+let count = document.querySelector("#count");
 
 // Add user input (country) to list
 const addItem = (e) => {
@@ -15,12 +16,11 @@ const addItem = (e) => {
 
 // Update the country count (0/195)
 const updateCount = () => {
-  console.log("update the count");
+  count.innerHTML = `${list.childElementCount}/195`;
 };
 
 document.querySelector("#submit").addEventListener("click", addItem);
 
-// Get the input typed and add it to the ol
 // Add a scroll on the list of longer than page so input is always at top
 // Add an array with all 195 countries
 // Add functionality to check button (check list against array)
